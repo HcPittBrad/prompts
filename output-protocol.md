@@ -82,6 +82,16 @@ YES        NO
 
 **量化目标：文字 < 20%，图形+Mermaid > 80%**
 
+## 输出目的地决定格式（强制）
+
+| 目的地 | 格式 | 原因 |
+|--------|------|------|
+| 对话回复（CLI终端） | ASCII tree + 表格 | 终端无 Mermaid 渲染引擎 |
+| GitHub issue / comment | Mermaid | GitHub 原生渲染 |
+| README / .md 文件 | Mermaid | GitHub 原生渲染 |
+
+**禁止在对话回复里输出 Mermaid 代码块——终端只会显示源码。**
+
 ## 代码块规则
 
 只放真正的代码 / 命令 / SQL。  
